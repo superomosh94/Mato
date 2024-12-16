@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie.me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Movie.me</div>
+        <nav>
+            <button id="upload-btn">Upload Movie</button>
+        </nav>
+    </header>
+    
+    <div id="movie-upload-form" class="hidden">
+        <h2>Upload Your Movie</h2>
+        <input type="file" id="movie-file" accept="video/*">
+        <input type="text" id="movie-title" placeholder="Enter Movie Title">
+        <textarea id="movie-description" placeholder="Enter Movie Description"></textarea>
+        <button id="submit-movie">Submit Movie</button>
+        <button id="cancel-upload">Cancel</button>
+    </div>
+
+    <div class="movie-list">
+        <h2>Latest Movies</h2>
+        <div id="movie-gallery">
+            <!-- Movies will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
